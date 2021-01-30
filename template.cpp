@@ -1,5 +1,7 @@
 // #include <bits/stdc++.h>
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 #define ar array
@@ -20,10 +22,9 @@ int main() {
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
 
-    int tc = 1;
-    // cin >> tc;
+    int tc;
+    cin >> tc;
     for (int t = 1; t <= tc; t++) {
-        // cout << "Case #" << t  << ": ";
         solve();
     }
 }
