@@ -22,7 +22,7 @@ void fft(vector<cd>& coeff, bool inverse) {
     // P(wk) = even(wk) - wk*odd(wk) for k>=n/2
     double ang = 2*PI/n * (inverse? -1 : 1);
     cd currw(1), w1(cos(ang), sin(ang));  // currw is a multiple of w1
-    for (int k=0; k*2<n; ++k) {
+    for (int i=0; i*2<n; ++i) {
         coeff[i] = even[i] + currw*odd[i];
         coeff[i + n/2] = even[i] - currw*odd[i];
         if (inverse) {
