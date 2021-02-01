@@ -1,7 +1,9 @@
 ## My CP resources
 
 Common Data Structures and Algorithms (implemented in C++):
+
 | Name | File | Classic use case |
+| -- | -- | -- |
 | Fast Fourier Transform | [fft.h](common_algos/fft.h) | Calculate multiplication of two polynomials (in coefficient form) | 
 | Kadane algorithm | [kadane.h](common_algos/kadane.h) | Max subarray sum |
 | Fenwick tree or BIT | [fenwick.h](common_algos/fenwick.h) | Update-fast range sum |
