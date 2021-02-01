@@ -1,5 +1,6 @@
 #include <vector>
 using namespace std;
+// See https://codeforces.com/contest/669/problem/E --> Little Artem and Time Machine 
 
 /* pseudocode 
 Range query:
