@@ -1,4 +1,5 @@
 // #include <bits/stdc++.h>
+// https://codeforces.com/contest/26/problem/A
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -13,6 +14,7 @@ const int MOD = 1e9 + 7;
 const int INF = 1e9;
 const ll LINF = 1e18;
 
+// sieving prime divisors 
 int solve(int n) {
     if (n==1) return 0;
     vector<int> dp(n+1, 0);  // prime divisor frequency
