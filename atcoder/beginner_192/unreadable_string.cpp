@@ -2,10 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <numeric>
-#include <unordered_map>
-#include <unordered_set>
-
 using namespace std;
 
 #define ar array
@@ -16,8 +12,15 @@ const int MOD = 1e9 + 7;
 const int INF = 1e9;
 const ll LINF = 1e18;
 
-void solve() {
-
+bool solve(string s) {
+    for (int i=0; i<s.size(); i+=2) {
+        if (s[i] > 'Z') {
+            if (i+1 == s.size()) continue;
+            if (s[i+1] <= 'Z') continue;
+        }
+        return false;
+    }
+    return true; 
 }
 
 int main() {
@@ -26,9 +29,12 @@ int main() {
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
 
-    int tc;
-    cin >> tc;
+    int tc = 1;
+    // cin >> tc;
     for (int t = 1; t <= tc; t++) {
-        solve();
+        string s;
+        cin >> s;
+        if (solve(s)) cout << "Yes";
+        else cout << "No"; 
     }
 }

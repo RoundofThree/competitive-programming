@@ -1,11 +1,8 @@
 // #include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
+#include <string>
 #include <algorithm>
-#include <numeric>
-#include <unordered_map>
-#include <unordered_set>
-
 using namespace std;
 
 #define ar array
@@ -16,8 +13,16 @@ const int MOD = 1e9 + 7;
 const int INF = 1e9;
 const ll LINF = 1e18;
 
-void solve() {
-
+int solve(int s, int k) {
+    string desc, asc;
+    for (int i=0; i<k; ++i) {
+        desc = asc = to_string(s); 
+        sort(asc.begin(), asc.end()); 
+        sort(desc.begin(), desc.end(), greater<char>());
+        s = stoi(desc) - stoi(asc);
+        if (s == 0) return 0;
+    }
+    return s;
 }
 
 int main() {
@@ -26,9 +31,13 @@ int main() {
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
 
-    int tc;
-    cin >> tc;
+    int tc = 1;
+    // cin >> tc;
     for (int t = 1; t <= tc; t++) {
-        solve();
+        int s;
+        int k;
+        cin >> s; 
+        cin >> k;
+        cout << solve(s, k);
     }
 }
