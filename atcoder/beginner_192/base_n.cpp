@@ -1,4 +1,5 @@
 // #include <bits/stdc++.h>
+
 #include <iostream>
 #include <vector>
 #include <math.h>
@@ -49,6 +50,33 @@ int solve(string x, ll m) {
     return ret;
 }
 
+ll solve2(string x, ll m) {
+    int d = 0;   // max digit 
+    for (const auto& c : x) {
+        d = max(d, c-'0');
+    }
+    if (x.size() == 1) {
+        return d<=m? 1 : 0;
+    }
+    // function 
+    auto f = [&](ll n) {
+        __int128_t num = 0;
+        for (const auto& c : x) {
+            num = num*n + (c-'0');
+            if (num > m) return false;
+        }
+        return true; 
+    };
+    ll left = d, right = m;
+    while (left < right) {
+        ll mid = (left+right+1)/2;
+        if (f(mid)) {
+            left = mid;
+        } else right = mid-1; 
+    }
+    return left - d; 
+}
+
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
@@ -62,6 +90,49 @@ int main() {
         string x;
         cin >> x; 
         cin >> m;
-        cout << solve(x, m);
+        cout << solve2(x, m);
     }
 }
+
+/*
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  string S;
+  cin >> S;
+  int64_t M;
+  cin >> M;
+  int d = 0;
+  for (const auto &s : S) {
+    d = max(d, s - '0');
+  }
+  if (S.size() == 1) {
+    cout << ((S[0] - '0') <= M ? 1 : 0) << '\n';
+    return 0;
+  }
+  // if valid 
+  auto f = [&](int64_t n) {
+    __int128 x = 0;
+    for (const auto &s : S) {
+      x = n * x + (s - '0');
+      if (x > M) return false;
+    }
+    return true;
+  };
+  int64_t lo = d, hi = M;
+  while (lo < hi) {
+    int64_t mi = (lo + hi + 1) / 2;
+    if (f(mi)) {
+      lo = mi;
+    } else {
+      hi = mi - 1;
+    }
+  }
+  cout << lo - d << '\n';
+  return 0;
+}
+*/
