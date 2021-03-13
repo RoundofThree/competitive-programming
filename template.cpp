@@ -11,6 +11,10 @@ using namespace std;
 #define ar array
 #define ll long long
 
+// return true if T& a changed 
+template<class T> bool chmax(T& a, T b) {return b>a? a=b, true : false; }
+template<class T> bool chmin(T& a, T b) {return b<a? a=b, true : false; }
+
 const int MAX_N = 1e5 + 1;
 const int MOD = 1e9 + 7;
 const int INF = 1e9;

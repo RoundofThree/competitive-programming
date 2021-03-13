@@ -12,6 +12,6 @@ Common Data Structures and Algorithms (implemented in C++):
 | String hash | [string_hash.h](common_algos/string_hash.h) | Rabin-Karp pattern matching algorithm for strings. Find the number of different substring in a string |
 | Sieve of Eratosthenes | [sieve_eratosthenes.h](common_algos/sieve_eratosthenes.h) | Find all prime numbers in a range. The concept of sieving can be applied to lot of DP problems though. | 
 | Euclidean algorithm | [extended_euclidean.h](common_algos/extended_euclidean.h) | Find `gcd(a, b)` while also solving the diophantine equation `ax + by = gcd(a, b)`. To find GCD, you may as well use the built-in `__gcd(a, b)` where a and b are integers. |
-| Dijkstra algorithm | TBD | TBD | 
+| Dijkstra algorithm | [dijkstra.h](common_algos/dijkstra.h) | Find the shortest path and its distance from a start node to a final node. | 
 
 

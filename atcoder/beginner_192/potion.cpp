@@ -17,7 +17,8 @@ const int MOD = 1e9 + 7;
 const int INF = 1e9;
 const ll LINF = 1e18;
 
-// Find the largest sum of ingredients, which is target is divisible by. 
+// for len=ings.size() to len=1 
+// 
 ll solve(ll target, vector<int> ings) {
     // TODO
     return target;
