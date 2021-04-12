@@ -73,5 +73,10 @@ int fastfib(int n) {
 // 3. Apply a permutation k times
 
 // 4. Apply geometric transformations to a set of points
+// Shift operation, scaling and rotation 
 
-// 5. Number of paths of length k in a graph 
+// 5. Number of paths of length k in a graph
+ll pathsLenK(vector<vector<int>>& graph, int k, int i, int j) {
+    vector<vector<int>> tmp = matrix_exp(graph, k);
+    return tmp[i][j];
+}
