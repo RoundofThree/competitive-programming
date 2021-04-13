@@ -14,4 +14,5 @@ Common Data Structures and Algorithms (implemented in C++):
 | Euclidean algorithm | [extended_euclidean.h](common_algos/extended_euclidean.h) | Find `gcd(a, b)` while also solving the diophantine equation `ax + by = gcd(a, b)`. To find GCD, you may as well use the built-in `__gcd(a, b)` where a and b are integers. |
 | Dijkstra algorithm | [dijkstra.h](common_algos/dijkstra.h) | Find the shortest path and its distance from a start node to a final node. | 
 | Binary exponentiation | [binpow.h](common_algos/binpow.h) | Fast exponentiation of numbers or matrices (transformations). Find the number of paths of length k in an unweighted undirected graph. |
+| Linear diophantine equations | [diophantine_equations.h](common_algos/diophantine_equations.h) | Find integer solutions `<x, y>` to `ax+yb=c`. |
 

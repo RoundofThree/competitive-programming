@@ -1,6 +1,7 @@
 #include <vector>
 #include <tuple>
 
+// The extended Euclidean algorithm also calculates the Diophantine solution
 // the x and y get the coefficients to a and b
 // ax + by = gcd(a, b)
 // where x and y can be negative (but not both)
