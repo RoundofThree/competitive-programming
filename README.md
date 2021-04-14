@@ -15,4 +15,8 @@ Common Data Structures and Algorithms (implemented in C++):
 | Dijkstra algorithm | [dijkstra.h](common_algos/dijkstra.h) | Find the shortest path and its distance from a start node to a final node. | 
 | Binary exponentiation | [binpow.h](common_algos/binpow.h) | Fast exponentiation of numbers or matrices (transformations). Find the number of paths of length k in an unweighted undirected graph. |
 | Linear diophantine equations | [diophantine_equations.h](common_algos/diophantine_equations.h) | Find integer solutions `<x, y>` to `ax+yb=c`. |
+| Minimum stack/queue | [minimum_stack_queue.h](common_algos/minimum_stack_queue.h) | Find the minimum in a stack/queue anytime in O(1). Find the minimum for all subarrays of length k. | 
+
+<!-- Next I want systems of linear equations (SLAE) -->
+<!-- Maybe a gh page -->
 
