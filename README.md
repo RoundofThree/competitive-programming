@@ -16,7 +16,7 @@ Common Data Structures and Algorithms (implemented in C++):
 | Binary exponentiation | [binpow.h](common_algos/binpow.h) | Fast exponentiation of numbers or matrices (transformations). Find the number of paths of length k in an unweighted undirected graph. |
 | Linear diophantine equations | [diophantine_equations.h](common_algos/diophantine_equations.h) | Find integer solutions `<x, y>` to `ax+yb=c`. |
 | Minimum stack/queue | [minimum_stack_queue.h](common_algos/minimum_stack_queue.h) | Find the minimum in a stack/queue anytime in O(1). Find the minimum for all subarrays of length k. | 
+| Gauss-Jordan elimination | [slae.h](common_algos/slae.h) | Find solution(s) to a System of Linear Algebraic Equations. |
 
-<!-- Next I want systems of linear equations (SLAE) -->
 <!-- Maybe a gh page -->
 
