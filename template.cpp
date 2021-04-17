@@ -10,6 +10,9 @@ using namespace std;
 
 #define ar array
 #define ll long long
+#define pb push_back
+#define mp make_pair
+#define pi acos(-1)
 
 // return true if T& a changed 
 template<class T> bool chmax(T& a, T b) {return b>a? a=b, true : false; }

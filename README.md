@@ -13,5 +13,10 @@ Common Data Structures and Algorithms (implemented in C++):
 | Sieve of Eratosthenes | [sieve_eratosthenes.h](common_algos/sieve_eratosthenes.h) | Find all prime numbers in a range. The concept of sieving can be applied to lot of DP problems though. | 
 | Euclidean algorithm | [extended_euclidean.h](common_algos/extended_euclidean.h) | Find `gcd(a, b)` while also solving the diophantine equation `ax + by = gcd(a, b)`. To find GCD, you may as well use the built-in `__gcd(a, b)` where a and b are integers. |
 | Dijkstra algorithm | [dijkstra.h](common_algos/dijkstra.h) | Find the shortest path and its distance from a start node to a final node. | 
+| Binary exponentiation | [binpow.h](common_algos/binpow.h) | Fast exponentiation of numbers or matrices (transformations). Find the number of paths of length k in an unweighted undirected graph. |
+| Linear diophantine equations | [diophantine_equations.h](common_algos/diophantine_equations.h) | Find integer solutions `<x, y>` to `ax+yb=c`. |
+| Minimum stack/queue | [minimum_stack_queue.h](common_algos/minimum_stack_queue.h) | Find the minimum in a stack/queue anytime in O(1). Find the minimum for all subarrays of length k. | 
+| Gauss-Jordan elimination | [slae.h](common_algos/slae.h) | Find solution(s) to a System of Linear Algebraic Equations. |
 
+<!-- Maybe a gh page -->
 
