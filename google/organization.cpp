@@ -145,3 +145,74 @@ int main() {
         cout << endl;
     }
 }
+
+/*
+
+#include <iostream>
+#include <vector>
+#include <queue>
+using namespace std;
+int t, ti;
+void eat() {
+    int m, n, nm, p, aa, bb, x, y, a[100][100];
+    char c;
+    vector <int> v[100];
+    cin >> m >> n >> p;
+    nm = n + m;
+    for (int i = 0; i < nm; i++) {
+        for (int j = 0; j < nm; j++) {
+            cin >> c;
+            if (c == 'Y') {
+                a[i][j] = 0;
+                v[i].push_back(j);
+                v[j].push_back(i);
+            } else {
+                a[i][j] = -1;
+            }
+        }
+    }
+    cout << "Case #" << ti << ":";
+    for (int i = 0; i < p; i++) {
+        int vp[100] = {0};
+        bool b = 1;
+        queue<int> q;
+        cin >> aa >> bb;
+        aa--;
+        bb--;
+        vp[aa] = 1;
+        q.push(aa);
+        while (!q.empty() && b) {
+            x = q.front();
+            q.pop();
+            for (int z : v[x]) {
+                if (z == bb) {
+                    int j = 0;
+                    x = vp[x] + 1;
+                    while (x > 2) {
+                        j++;
+                        x = (x / 3 * 2) + (x % 3);
+                    }
+                    b = 0;
+                    cout << ' ' << j;
+                    break;
+                }
+                if (z < m && !vp[z]) {
+                    vp[z] = vp[x] + 1;
+                    q.push(z);
+                }
+            }
+        }
+        if (b) {
+            cout << ' ' << -1;
+        }
+    }
+    cout << '\n';
+}
+int main() {
+    cin >> t;
+    for (ti = 1; ti <= t; ti++) {
+        eat();
+    }
+    return 0;
+}
+*/
