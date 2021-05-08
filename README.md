@@ -17,6 +17,10 @@ Common Data Structures and Algorithms (implemented in C++):
 | Linear diophantine equations | [diophantine_equations.h](common_algos/diophantine_equations.h) | Find integer solutions `<x, y>` to `ax+yb=c`. |
 | Minimum stack/queue | [minimum_stack_queue.h](common_algos/minimum_stack_queue.h) | Find the minimum in a stack/queue anytime in O(1). Find the minimum for all subarrays of length k. | 
 | Gauss-Jordan elimination | [slae.h](common_algos/slae.h) | Find solution(s) to a System of Linear Algebraic Equations. |
+| Tree traversal | [tree_traversal.h](common_algos/tree_traversal.h) | Recursive and iterative binary tree traversal: preorder, inorder and postorder. | 
+| Reservoir Sampling | [reservoir_sampling.h](common_algos/reservoir_sampling.h) | Choose k random elements from a large stream in one traversal. Each element has probability `k/n` to be in the reservoir. |
 
 <!-- Maybe a gh page -->
+<!-- Find the top k elements in unsorted array, all methods and complexities: https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/ -->
+
 

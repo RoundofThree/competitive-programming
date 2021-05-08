@@ -48,7 +48,7 @@ int solveSLAE(vector<vector<double>> slae, vector<double>& ans) {
             ans[i] = slae[where[i]][m] / slae[where[i]][i];
         }
     }
-    // find for inconsistencies
+    // find inconsistencies
     for (int i=0; i<n; ++i) {
         double sum = 0;
         for (int j=0; j<m; ++j) {
@@ -65,7 +65,7 @@ int solveSLAE(vector<vector<double>> slae, vector<double>& ans) {
 
 // Another way to do it /2 more quickly is:
 // Forward phase --> build a triangular matrix instead of a diagonal matrix
-// Reverse phase --> calculate ans from bottom of triangle to up 
+// Reverse phase --> calculate ans from bottom of triangle upwards 
 // TODO 
 
 // Modular SLAE mod 2
