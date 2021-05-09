@@ -1,13 +1,30 @@
 // #include <bits/stdc++.h>
 #include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+#include <queue>
 #include <vector>
 #include <algorithm>
+#include <functional>
 #include <numeric>
+#include <map>
+#include <set>
 #include <unordered_map>
 #include <unordered_set>
 
 using namespace std;
 
+#define rep(i, a, b) for (int i=a; i<b; ++i)
+#define Rep(i, a, b) for (int i=a; i>b; --i)
+#define foreach(e, x) for (__typeof(x.begin()) e=x.begin(); e!=x.end(); ++e)
+#define mid ((l + r) >> 1)
+#define lson (k<<1)
+#define rson (k<<1|1)
+#define MEM(a,x) memset(a, x, sizeof a)
+#define pii pair<int, int>
 #define ar array
 #define ll long long
 #define pb push_back

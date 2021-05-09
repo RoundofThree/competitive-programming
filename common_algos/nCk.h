@@ -2,6 +2,26 @@
 using namespace std;
 
 #define ll long long 
+#define ul unsigned long int 
+#define uint unsigned int
+
+// TODO 
+// not modular nCk
+ul factorial(ul n) {
+    ul ret = 1;
+    for (ul i=2; i<=n; ++i) ret *= i;
+    return ret;
+}
+
+ul binomial(uint n, uint k) {
+    ul ret = 1;
+    if (k > n-k) k = n-k;
+    for (uint i=1; i<=k; ++i) {
+        ret *= (n-i+1);
+        ret /= i;
+    }
+    return ret;
+}
 
 // modular exponentiation 
 ll powmod(ll base, ll exp, ll mod) {
