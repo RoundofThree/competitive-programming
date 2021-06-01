@@ -19,6 +19,8 @@ Common Data Structures and Algorithms (implemented in C++):
 | Gauss-Jordan elimination | [slae.h](common_algos/slae.h) | Find solution(s) to a System of Linear Algebraic Equations. |
 | Tree traversal | [tree_traversal.h](common_algos/tree_traversal.h) | Recursive and iterative binary tree traversal: preorder, inorder and postorder. | 
 | Reservoir Sampling | [reservoir_sampling.h](common_algos/reservoir_sampling.h) | Choose k random elements from a large stream in one traversal. Each element has probability `k/n` to be in the reservoir. |
+| Union Find | [union_find.h](common_algos/union_find.h) | Find connected components in a graph. Detect cycles in a graph. |
+| Sorting algorithms | [sort.h](common_algos/sort.h) | Radix sort, counting sort, shell sort, merge sort, quick sort, heap sort, selection sort, insertion sort, bubble sort. | 
 
 <!-- Maybe a gh page -->
 <!-- Find the top k elements in unsorted array, all methods and complexities: https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/ -->
