@@ -22,7 +22,7 @@ Common Data Structures and Algorithms (implemented in C++):
 | Union Find | [union_find.h](common_algos/union_find.h) | Find connected components in a graph. Detect cycles in a graph. |
 | Sorting algorithms | [sort.h](common_algos/sort.h) | Radix sort, counting sort, shell sort, merge sort, quick sort, heap sort, selection sort, insertion sort, bubble sort. | 
 | Aho-Coransick trie | [trie.hpp](common_algos/trie.hpp) | String matching with a large text and multiple keywords. Find shortest string containing all keywords. |
-| KMP | | String matching with single keyword. | 
+| KMP | [kmp.hpp](common_alhos/kmp.hpp) | String matching with single keyword. | 
 
 <!-- Maybe a gh page -->
 <!-- Find the top k elements in unsorted array, all methods and complexities: https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/ -->
