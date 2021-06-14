@@ -1,6 +1,41 @@
 ## My CP resources
+### Basic techniques
 
-Common Data Structures and Algorithms (implemented in C++):
+- Sorting 
+- Sorting + binary search 
+- (Ordered and unordered) maps and sets. Heaps.
+- Stack and queue
+- Complete search 
+    - Generate subsets/permutations
+    - Backtracking + pruning 
+    - Meet in the middle 
+- Greedy 
+    - Coin problem (subject to certain constraints)
+    - Scheduling
+    - Tasks and deadlines
+    - Minimizing sums
+    - Data compression using Huffman coding 
+- Dynamic Programming
+    - Coin problem
+    - Longest increasing subsequence (in O(n^2))
+    - Paths in a grid
+    - Knapsack problems
+    - Edit distance 
+    - Counting tilings 
+- Amortized analysis
+    - Two pointers
+    - Sliding window
+    - Nearest smaller element (using stack)
+- Range queries
+    - Prefix sum
+    - Fenwick tree (+ index compression)
+    - Segment tree (+ index compression)
+- Bit manipulation
+    - Bitmask state in DP 
+    - Bitset (generate subsets...)
+    - Hamming distance
+
+### Common Data Structures and Algorithms (implemented in C++):
 
 | Name | File | Classic use case |
 | -- | -- | -- |
@@ -24,6 +59,7 @@ Common Data Structures and Algorithms (implemented in C++):
 | Aho-Coransick trie | [trie.hpp](common_algos/trie.hpp) | String matching with a large text and multiple keywords. Find shortest string containing all keywords. |
 | KMP | [kmp.hpp](common_alhos/kmp.hpp) | String matching with single keyword. | 
 
+<!-- Bit optimizations -->
 <!-- Maybe a gh page -->
 <!-- Find the top k elements in unsorted array, all methods and complexities: https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/ -->
 
